@@ -1,7 +1,11 @@
 # I18nResourceValidator
-Validates java i18n porperty files, so that you don't have to...
+Validates java i18n property files, so that you don't have to...
 
-## Sample
+Build status: [![Build Status](https://travis-ci.com/longstone/I18nResourceValidator.svg?branch=master)](https://travis-ci.com/longstone/I18nResourceValidator)
+
+## Example
+
+A file with the entry `deal.with.it=C'est la vie` will lead to a broken test.
 
 ``` java
 import static org.hamcrest.CoreMatchers.is;
