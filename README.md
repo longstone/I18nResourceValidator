@@ -15,9 +15,6 @@ import org.junit.Test;
 public class I18nResourceBundleValidationTest {
 
 	private static boolean isMessageProperties(Path path) {
-		if (!path.toFile().isFile()) {
-			return false;
-		}
 		String filename = path.getFileName().toString();
 		return filename.startsWith("messages_") && filename.endsWith("properties");
 	}
