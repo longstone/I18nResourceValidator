@@ -17,5 +17,6 @@
         <gpg.keyname>deployment-key</gpg.keyname>
         <gpg.passphrase>${env.MAVEN_GPG_PASSPHRASE}</gpg.passphrase>
       </properties>
-  </profile>
+    </profile>
+  </profiles>
 </settings>
