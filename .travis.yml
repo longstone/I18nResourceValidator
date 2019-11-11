@@ -5,9 +5,14 @@ jdk:
 
 script: make build
 
+master:
+    provider: script
+    script: make master
+    on:
+     branch: master
+
 deploy:
   provider: script
-  script: make travis-deploy
+  script: make release
   on:
     tags: true
-    branch: master
