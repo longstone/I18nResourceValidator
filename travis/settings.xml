@@ -6,4 +6,16 @@
       <password>${env.MAVEN_REPO_PASSWORD}</password>    
     </server>
   </servers>
+  <profiles>
+    <profile>
+      <id>release</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+      <properties>
+        <gpg.executable>gpg</gpg.executable>
+        <gpg.keyname>deployment-key</gpg.keyname>
+        <gpg.passphrase>${env.MAVEN_GPG_PASSPHRASE}</gpg.passphrase>
+      </properties>
+  </profile>
 </settings>
