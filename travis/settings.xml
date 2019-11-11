@@ -14,7 +14,7 @@
       </activation>
       <properties>
         <gpg.executable>gpg</gpg.executable>
-        <gpg.keyname>deployment-key</gpg.keyname>
+        <gpg.keyname>A0D18830</gpg.keyname>
         <gpg.passphrase>${env.MAVEN_GPG_PASSPHRASE}</gpg.passphrase>
       </properties>
     </profile>
