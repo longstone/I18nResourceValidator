@@ -5,9 +5,24 @@
     <artifactId>i18n-validator</artifactId>
     <packaging>jar</packaging>
     <version>1.0-SNAPSHOT</version>
-    <name>I18n Resource Validator</name>
+    <name>${project.groupId}:${project.artifactId}</name>
+    <description>Validates java i18n property files, so that you don't have to...</description>
     <url>https://github.com/longstone/I18nResourceValidator</url>
 
+    <developers>
+       <developer>
+               <name>longstone</name>
+               <email>longstone@users.noreply.github.com</email>
+      </developer>
+    </developers>
+    
+    <licences>
+      <licence>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      </licence>
+    </licences>       
+    
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.target>1.8</maven.compiler.target>
