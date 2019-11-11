@@ -2,3 +2,17 @@ language: java
 jdk:
   - openjdk8
   - openjdk11
+
+script: make build
+
+master:
+    provider: script
+    script: make master
+    on:
+     branch: master
+
+deploy:
+  provider: script
+  script: make release
+  on:
+    tags: true
