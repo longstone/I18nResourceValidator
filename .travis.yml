@@ -2,3 +2,12 @@ language: java
 jdk:
   - openjdk8
   - openjdk11
+
+script: make build
+
+deploy:
+  provider: script
+  script: make travis-deploy
+  on:
+    tags: true
+    branch: master
