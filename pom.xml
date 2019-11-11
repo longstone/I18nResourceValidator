@@ -109,4 +109,14 @@
         <connection>scm:git:git@github.com:longstone/I18nResourceValidator.git</connection>
         <developerConnection>scm:git:git@github.com:longstone/I18nResourceValidator.git</developerConnection>
     </scm>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+    </distributionManagement>
 </project>
