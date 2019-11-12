@@ -5,6 +5,15 @@ Build status: [![Build Status](https://travis-ci.com/longstone/I18nResourceValid
 
 ## Example
 
+Import:
+```
+<dependency>
+  <groupId>com.github.longstone</groupId>
+  <artifactId>i18n-validator</artifactId>
+  <version>2.0</version>
+</dependency>
+```
+
 A file with the entry `deal.with.it=C'est la vie` will lead to a broken test.
 
 ``` java
@@ -40,3 +49,12 @@ public class I18nResourceBundleValidationTest {
 	}
 }
 ```
+### Development
+
+## Release
+
+Create a release in Github on the master branch and Travis will take care of the deployment. A release became visible in a few (-15) minutes on https://oss.sonatype.org/#nexus-search;gav~com.github.longstone~i18n-validator~~~ . A few hours later on maven central https://mvnrepository.com/artifact/com.github.longstone/i18n-validator.
+
+## Contribution
+
+Feel free to open merge requests (covered with unit tests ;) )!
